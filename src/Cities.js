@@ -155,7 +155,7 @@ export default function Cities()
               <Row style={{display : 'flex'}}>
                <h3  style={{marginTop : 12 , marginLeft : 10 }} >{render.name}</h3>
                <StarBorderTwoToneIcon onClick={() => addToFav(render)}  fontSize='large' style={{marginTop : 10 , marginLeft : 750 }}></StarBorderTwoToneIcon>
-
+                           
              </Row>
              <Divider/>
              <p style={{ marginLeft : 340 , marginTop : 270 , color : 'green'}} >{render.desc}</p>

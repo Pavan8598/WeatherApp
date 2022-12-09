@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 
-const url = "http://127.0.0.1:3003/user";
+const url = "https://eager-numerous-marsupial.glitch.me/user";
+//const url = "http://127.0.0.1:3003/user";
 
 export const getallUsers = async (id) => {
     id = id || '';
@@ -23,8 +24,8 @@ export const deleteUser = async (id) => {
 
 
 
-const url1 = "http://127.0.0.1:3003/added";
-
+const url1 = "https://eager-numerous-marsupial.glitch.me/added";
+//const url = "http://127.0.0.1:3003/added";
 
 export const getallAdded = async (id) => {
     id = id || '';
@@ -46,7 +47,8 @@ export const deleteAdded = async (id) => {
 
 
 
-const url2 = "http://127.0.0.1:3003/favorite";
+const url2 = "https://eager-numerous-marsupial.glitch.me/favorite";
+//const url = "http://127.0.0.1:3003/favorite";
 
 
 export const getallFavorite = async (id) => {
