@@ -59,13 +59,5 @@
       "humidity": "52.0%"
     }
   ],
-  "favorite": [
-    {
-      "id": "6",
-      "name": "Jalgaon",
-      "desc": "Clear with periodic clouds",
-      "temp": "20 °C",
-      "humidity": "52.0%"
-    }
-  ]
+  "favorite": []
 }
