@@ -107,9 +107,7 @@ export default function Header() {
   function colr (colo) {
 
       myRef.current.style.backgroundColor = colo;
-      //alert(document.getElementById('#Home').nodeName);
-       //document.body.style.backgroundColor='yellow';
-       
+      
       }
   if(id == "Home")
   {
