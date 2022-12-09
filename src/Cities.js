@@ -156,7 +156,7 @@ export default function Cities()
         }} >
               <Row style={{display : 'flex'}}>
                <h3  style={{marginTop : 12 , marginLeft : 10 }} >{render.name}</h3>
-               <StarBorderTwoToneIcon onClick={() => addToFav(render)}  fontSize='large' style={{marginTop : 10 , marginLeft :770 }}></StarBorderTwoToneIcon>
+               <StarBorderTwoToneIcon onClick={() => addToFav(render)}  fontSize='large' style={{marginTop : 10 , alignSelf : "right" }}></StarBorderTwoToneIcon>
 
              </Row>
              <Divider/>

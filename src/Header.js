@@ -8,7 +8,7 @@ import Modal from '@mui/material/Modal';
 import { Button, Col, Row } from 'react-bootstrap';
 import { Divider, TextField } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import { getallAdded, getallUsers } from './service';
+import { deleteFavorite, getallAdded, getallUsers } from './service';
 import { deleteUser } from './service';
 import { useState, useEffect } from 'react';
 import Drawer from '@mui/material/Drawer';
@@ -101,7 +101,19 @@ export default function Header() {
     getUsers();
   }
 
-        
+  function deletefav(id)
+  {
+     deleteFavData(id);
+     alert("City Removed from Favorites");
+  }
+
+  
+  const deleteFavData= async (id) => {
+    await deleteFavorite(id);
+    getFavs();
+  }
+
+
   const myRef = useRef();
 
   function colr (colo) {
@@ -157,7 +169,7 @@ export default function Header() {
               <CardContent>
                 <Typography sx={{ fontSize: 16 ,  display : 'flex'}} color="text.secondary" gutterBottom>
                   {data.name}
-                  <StarBorderTwoToneIcon fontSize='medium' style={{ marginLeft :  90 }}></StarBorderTwoToneIcon>
+                  <StarBorderTwoToneIcon onClick={() => deletefav(data.id)} sx={ {color : "orange"} } fontSize='medium' style={{ marginLeft :  130 }}></StarBorderTwoToneIcon>
                 </Typography>
                 <Typography sx={{ fontSize: 15 }} color="green">
                   {data.desc}
